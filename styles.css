@@ -382,3 +382,109 @@ footer { padding: 80px; text-align: center; opacity: 0.5; }
 .preview-item img {
   pointer-events: none;
 }
+
+/* --- NEW FEATURES & LAYOUT FIXES --- */
+
+/* 1. FIX FOR CRUNCHED INPUTS (Waitlist & Form Spacing) */
+#waitlist-form input, 
+.upload-group input {
+    margin-bottom: 20px !important;
+    display: block !important;
+}
+
+/* 2. STORY PROMPT GENERATOR STYLING */
+.prompt-box {
+    background: rgba(26, 115, 232, 0.1);
+    padding: 15px 20px;
+    border-radius: 15px;
+    border-left: 4px solid var(--primary-blue);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#current-prompt {
+    font-size: 1rem;
+    font-style: italic;
+    opacity: 0.9;
+    color: #fff;
+    margin: 0;
+}
+
+.btn-mini {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--crystal-border);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: 0.3s;
+}
+
+.btn-mini:hover {
+    background: var(--primary-blue);
+    border-color: var(--primary-blue);
+}
+
+/* 3. DASHBOARD GRID SYSTEM */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.persona-card {
+    text-align: center;
+    padding: 40px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.persona-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.persona-avatar {
+    width: 80px;
+    height: 80px;
+    background: var(--primary-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(26, 115, 232, 0.3);
+}
+
+.add-card {
+    text-decoration: none;
+    border: 2px dashed var(--crystal-border);
+    background: transparent;
+}
+
+.add-card .persona-avatar {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+}
+
+/* 4. OVERLAY FIX (Ensuring it sits on top) */
+.processing-overlay {
+    z-index: 9999 !important; /* Forces it above everything else */
+    background: rgba(0, 0, 0, 0.95) !important; /* Darker for better focus */
+}
+
+/* 5. NAVIGATION UPGRADE */
+.glass-nav {
+    backdrop-filter: blur(25px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(25px) saturate(180%) !important;
+}

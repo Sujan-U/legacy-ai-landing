@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LegacyAI | Preserve Family Wisdom">
+  <meta name="twitter:description" content="Upload memories today—let future generations chat with AI versions of loved ones.">
+  <meta name="twitter:image" content="https://your-username.github.io/LegacyAI/background.jpg">
   <title>Share a Legacy - LegacyAI</title>
   <link rel="stylesheet" href="styles.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
@@ -10,10 +14,11 @@
 <body>
   <div id="scroll-bg"></div>
 
-  <nav class="navbar">
+  <nav class="navbar glass-nav">
     <div class="logo">LegacyAI</div>
     <div class="nav-links">
       <a href="index.html" class="nav-link">Home</a>
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
       <a href="index.html#signup-section" class="nav-btn">Join Waitlist</a>
     </div>
   </nav>
@@ -39,6 +44,12 @@
 
         <div class="upload-group">
           <h3 class="section-title">Write a Story</h3>
+          
+          <div class="prompt-box">
+            <p id="current-prompt">"What was the first car you ever owned?"</p>
+            <button id="refresh-prompt" class="btn-mini">New Prompt</button>
+          </div>
+
           <textarea id="story-input" placeholder="Describe a memory, a favorite joke, or a life lesson..."></textarea>
         </div>
 
@@ -77,7 +88,7 @@
       <p id="sub-status" class="large-text" style="font-size: 1.2rem; opacity: 0.7;">
         Our AI is learning the voice and stories you shared.
       </p>
-      <button id="done-btn" class="btn-primary" style="display:none; margin-top: 30px;" onclick="window.location.href='index.html'">Return Home</button>
+      <button id="done-btn" class="btn-primary" style="display:none; margin-top: 30px;" onclick="window.location.href='dashboard.html'">View My Legacies</button>
     </div>
   </div>
 

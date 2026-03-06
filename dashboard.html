@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - LegacyAI</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+  <div id="scroll-bg"></div>
+
+  <nav class="navbar glass-nav">
+    <div class="logo">LegacyAI</div>
+    <div class="nav-links">
+      <a href="upload.html" class="nav-link">Upload Story</a>
+      <a href="index.html" class="nav-btn" style="background: rgba(255,255,255,0.1); color: #fff; border: 1px solid var(--crystal-border);">Logout</a>
+    </div>
+  </nav>
+
+  <main class="content-section" data-bg="background.jpg">
+    <div class="container">
+      <div class="floating-hero-text" style="text-align: left; margin-bottom: 40px;">
+        <h1 style="font-size: 3.5rem;">Your Legacies</h1>
+        <p class="hero-subtitle" style="margin: 0; opacity: 0.8;">Select a profile to begin a conversation or add a new memory.</p>
+      </div>
+
+      <div class="dashboard-grid">
+        
+        <div class="crystal-card persona-card">
+          <div class="persona-avatar">G</div>
+          <h3 style="margin-bottom: 5px;">Grandpa Joe</h3>
+          <p style="opacity: 0.7; margin-bottom: 20px;">8 Stories • 12 Photos</p>
+          <button class="btn-primary" 
+                  style="padding: 12px 30px; font-size: 1rem; width: auto;" 
+                  onclick="window.location.href='chat.html'">
+            Chat Now
+          </button>
+        </div>
+        
+        <div class="crystal-card persona-card add-card" onclick="window.location.href='upload.html'">
+          <div class="persona-avatar">+</div>
+          <h3 style="margin-bottom: 5px; color: #a855f7;">Add New</h3>
+          <p style="opacity: 0.7;">Preserve another loved one</p>
+        </div>
+
+      </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

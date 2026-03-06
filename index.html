@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Preserve family stories and wisdom with AI-powered conversations.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LegacyAI | Preserve Family Wisdom">
+  <meta name="twitter:description" content="Upload memories today—let future generations chat with AI versions of loved ones.">
+  <meta name="twitter:image" content="https://your-username.github.io/LegacyAI/background.jpg">
   <title>LegacyAI - Preserve Family Wisdom Forever</title>
   <link rel="stylesheet" href="styles.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
@@ -12,9 +16,10 @@
   
   <div id="scroll-bg"></div>
 
-  <nav class="navbar">
+  <nav class="navbar glass-nav">
     <div class="logo">LegacyAI</div>
     <div class="nav-links">
+      <a href="dashboard.html" class="nav-link">Dashboard</a>
       <a href="upload.html" class="nav-link">Upload Story</a>
       <a href="#signup-section" class="nav-btn">Join Waitlist</a>
     </div>
@@ -69,10 +74,13 @@
       <div class="crystal-card large-card" id="waitlist-container">
         <h3 class="section-title">Join the Future of Heritage</h3>
         <p class="large-text">Early access is limited. Secure your family's spot on the waitlist.</p>
+        
         <form id="waitlist-form">
-          <input type="text" name="name" placeholder="Your Name" required/>
-          <input type="email" name="email" placeholder="Email Address" required/>
-          <input type="text" name="preserve-target" placeholder="Who would you want to preserve? (ex. Grandpa, Mom)"/>
+          <div class="upload-group">
+            <input type="text" name="name" placeholder="Your Name" required/>
+            <input type="email" name="email" placeholder="Email Address" required/>
+            <input type="text" name="preserve-target" placeholder="Who would you want to preserve? (ex. Grandpa, Mom)"/>
+          </div>
           <button type="submit" class="btn-primary" style="width: 100%;">Join Waitlist</button>
         </form>
       </div>
